@@ -10,7 +10,7 @@ app.Run(async (context) =>
     var request = context.Request;
     if (request.Path == "/api/user")
     {
-        var responseText = "Некорректные данные";   // default message content
+        var responseText = "Incorrect data";   // default message content
 
         if (request.HasJsonContentType())
         {
