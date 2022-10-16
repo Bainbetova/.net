@@ -16,7 +16,6 @@ app.Run(async (context) =>
     var response = context.Response;
     var request = context.Request;
     var path = request.Path;
-    //string expressionForNumber = "^/api/users/([0 - 9]+)$";   // если id представляет число
 
     string expressionForGuid = @"^/api/users/\w{8}-\w{4}-\w{4}-\w{4}-\w{12}$";
     if (path == "/api/users" && request.Method=="GET")
